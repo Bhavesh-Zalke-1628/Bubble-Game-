@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;   
+    background-color: rgb(144, 188, 144);
+}
+#pannel{
+    height: 80%;
+    width: 80%;
+    background-color: #fff;
+    border-radius:10px ;
+    overflow: hidden;
+}
+#pannel-top{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #619761;
+    color: #fff;
+    padding: 0px 30%;
+    gap: 30px;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.elem h2{
+    font-weight: 500;
+    font-size: 22px;
+}
+.box{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    color: #65bb81;
+    font-size: 22px;
+    font-weight: 700;
+}
+#bottom{
+    width: 100%;            
+    height: 500px;
+    display: flex;
+    gap: 5px;
+    padding: 10px 7px;
+    flex-wrap: wrap;
+}
+#bubble{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color:#326b45;
+}
+#bubble:hover{
+    background-color: #153320;
+    cursor: pointer;
+}
+#bottom h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 300px;
+    text-align: center;
+}
+#btn{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    margin-top: 46%;
+    margin-right: 50px;
+    gap: 50px;
+}
+button{
+    height: 50px;
+    width: 100px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    background-color: #569056;    
+    border-radius: 10px;
+    cursor: pointer;
+}
