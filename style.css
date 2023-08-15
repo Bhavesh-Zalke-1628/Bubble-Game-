@@ -52,11 +52,11 @@ html,body{
     font-weight: 700;
 }
 #bottom{
-    width: 100%;            
-    height: 500px;
+    width: 100%;  
+    height: 495px;
     display: flex;
-    gap: 5px;
-    padding: 10px 7px;
+    gap: 2px;
+    padding: 2px 20px;
     flex-wrap: wrap;
 }
 #bubble{
