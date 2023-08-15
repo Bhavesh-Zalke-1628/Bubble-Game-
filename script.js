@@ -111,36 +111,36 @@ document.querySelector("#EndBtn")
     }
 })
 
-// // gsap section 
-// gsap.from("#pannel-top .elem",{
-//     y:-50,
-//     x:-50,
-//     duration :0.5,
-//     delay :1.5,
-//     scale:0,
-//     opacity:0,
-//     stagger :0.5,
-// })
-// gsap.from("#bubble",{
-//     y:-50,
-//     opacity:0,
-//     scale:3,
-//     duration:1,
-//     delay:0.5,
-// })
-// gsap.from("#pannel",{
-//     scale:3,
-//     opacity:0,
-//     duration:0.5,
-//     delay:1,
-//     rotate : 360,
-// })
-// gsap.from("button",{
-//     y:50,
-//     x:30,
-//     scale:2,
-//     opacity:0,
-//     duration:1,
-//     delay : 2,
-//     rotate : 180,
-// })
+// gsap section 
+gsap.from("#pannel-top .elem",{
+    y:-50,
+    x:-50,
+    duration :0.5,
+    delay :1.5,
+    scale:0,
+    opacity:0,
+    stagger :0.5,
+})
+gsap.from("#bubble",{
+    y:-50,
+    opacity:0,
+    scale:3,
+    duration:1,
+    delay:0.5,
+})
+gsap.from("#pannel",{
+    scale:3,
+    opacity:0,
+    duration:0.5,
+    delay:1,
+    rotate : 360,
+})
+gsap.from("button",{
+    y:50,
+    x:30,
+    scale:2,
+    opacity:0,
+    duration:1,
+    delay : 2,
+    rotate : 180,
+})
