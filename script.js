@@ -1,8 +1,8 @@
 var timer = 60;
-var score=-10;
+var score=0;
 var hitrn =0;
-var scoreReturn
-var highScore =scoreReturn
+var localScore
+var highScore =0
 var over 
 //make bubble using the function
 function makeBubble(){
@@ -39,6 +39,9 @@ function hit(){
 function increaaseScore(){
     score += 10;
     document.querySelector("#scoreVal").textContent=score;
+    if(highScore<score){
+        localScore =  score
+    }
 }
 
 //click on bubble 
@@ -52,31 +55,20 @@ document.querySelector("#bottom")
     }else{
         gameOver()
         timer =0;
-        if(score > -10 ){
-            over.textContent=`Game Over Score :${Number(score)}`;
+        if(score > 0 ){
+            over.textContent=`Game Over Score :${Number(score)} High Score : ${Number(localScore)}`;
         }
         else{
-            over.textContent=`Game Over Score :${Number(score=0)}`;
+            over.textContent=`Game Over Score :${Number(score=0)} High Score : ${Number(localScore)}`;
         }
     }
 })
 
-//high Score function
-function highSco() {
-    if(score>highScore){
-        scoreReturn = score
-    }
-    else if(score<highScore && score==highScore){
-        scoreReturn = highScore 
-    }
-}
-highSco()
-console.log(highScore)
 
 //to show the game over text
 function gameOver(){
     over = document.querySelector("#bottom");
-    over.textContent=`Game Over Score :${Number(score)}`;
+    over.textContent=`Game Over Score :${Number(score)} High Score : ${Number(localScore)}`;
     over.style.color="green";
     over.style.fontSize="50px";
     over.style.fontFamily ="Times new Romen";
@@ -93,6 +85,7 @@ function start(){
         timer=60;
         runTimer();
         increaaseScore();
+        hitrn =0
         hit();
         makeBubble();
     })
@@ -103,11 +96,12 @@ start()
 document.querySelector("#EndBtn")
 .addEventListener("click",function(){
     gameOver();
-    if(score > -10 ){
-         over.textContent=`Game Over Score :${Number(score)}`;
+    hitrn = 0;
+    if(score > 0 ){
+         over.textContent=`Game Over Score :${Number(score)} High Score : ${Number(localScore)}`;
     }
     else{
-        over.textContent=`Game Over Score :${Number(score=0)}`;
+        over.textContent=`Game Over Score :${Number(score=0)} High Score : ${Number(localScore)}`;
     }
 })
 
